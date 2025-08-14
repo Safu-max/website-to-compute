@@ -8,16 +8,70 @@ With this project you can make a website and preview it in your browser, then de
 
 > You can alternatively deploy your blog to other platforms, like <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
-## In this doc
+## In this file
 
-* [Fork your own site](#fork-your-own-site)
-* [Get to know your website](#get-to-know-your-website)
-  * [Share your draft site](#share-your-draft-site)
-* [Deploy your site to Fastly Compute](#deploy-your-site-to-fastly-compute)
-* [Save your edits to GitHub](#save-your-edits-to-github)
-* [How this project works](#how-this-project-works-)
-  * [Extensions](#extensions)
-* [Keep going! 🚀](#keep-going-)
+*<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My TikTok Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      padding: 20px;
+      background: #ff0050;
+      margin: 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    blockquote {
+      max-width: 300px;
+      min-width: 250px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    footer {
+      background: #ff0050;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Favorite TikToks</h1>
+
+  <div class="gallery">
+    <!-- TikTok Video 1 -->
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@scout2015/video/6718335390845095173" data-video-id="6718335390845095173"></blockquote>
+
+    <!-- TikTok Video 2 -->
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@tiktok/video/7106592043132202245" data-video-id="7106592043132202245"></blockquote>
+
+    <!-- TikTok Video 3 -->
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsjojosiwa/video/7049783943020948738" data-video-id="7049783943020948738"></blockquote>
+  </div>
+
+  <footer>
+    <p>Created by [Your Name] | TikTok Portfolio</p>
+  </footer>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+</body>
+</html>
+
 
 ## Fork your own site
 
@@ -40,7 +94,7 @@ Make sure you [save your changes to GitHub](#save-your-edits-to-github).
 
 You can make edits in the files by opening them from the left sidebar. Your website preview will update as you edit!
 
-💡 Try opening `index.html` and making a change.
+💡 Try opening `tiktok.html` and making a change.
 
 🎨 Change your site style rules in `style.css`.
 
@@ -124,11 +178,6 @@ _The app itself only needs deployed to Fastly once, when you click the **🚀 Pu
 💻 If you check the right-hand side of the **Terminal** you'll find multiple processes – this is to run the vite and Fastly commands.
 
 ### Extensions
-
-This project uses the following extensions from the dev community! 🙌
-
-* [VSCode Action Buttons Ext](https://marketplace.visualstudio.com/items?itemName=jkearins.action-buttons-ext)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Keep going! 🛸
 
